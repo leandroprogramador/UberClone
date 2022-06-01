@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1044609848684",
+    "project_id": "uberclone-8ab41",
+    "storage_bucket": "uberclone-8ab41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044609848684:android:ce595b94f5191b04d8cf49",
+        "android_client_info": {
+          "package_name": "com.leandro.uberclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044609848684-0q7bpl4k9ccr9k1ph7p3suqpuda10ipc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA16VoyaCVl_OlP9aD-gjT1ua4YYvqglU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044609848684-0q7bpl4k9ccr9k1ph7p3suqpuda10ipc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
