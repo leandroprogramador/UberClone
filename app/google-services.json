@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1044609848684-44h4jovu3nrfvhenmt9u199dmvnbeo6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leandro.uberclone",
+            "certificate_hash": "bae42f9fedcbc28db05d1a324c8b0469e1b977a1"
+          }
+        },
+        {
           "client_id": "1044609848684-0q7bpl4k9ccr9k1ph7p3suqpuda10ipc.apps.googleusercontent.com",
           "client_type": 3
         }
