@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.leandro.uberclone">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,10 +16,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UberClone"
         tools:targetApi="31">
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC3k5PvMtBQCvhaIA12GUUf38C7RdpGbao" />
+
+
         <activity
-            android:theme="@style/SplashTheme"
+            android:name=".DriverHomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_driver_home"
+            android:theme="@style/Theme.UberClone.NoActionBar" />
+        <activity
             android:name=".SplashScreenActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
