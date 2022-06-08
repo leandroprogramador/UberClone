@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/drawable/button.xml" value="0.311" />
         <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/drawable/ic_phone_black_24dp.xml" value="0.2915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/layout/activity_driver_home.xml" value="0.16742654508611957" />
         <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/layout/activity_maps.xml" value="0.17603850050658562" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/layout/activity_splash_screen.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/layout/app_bar_driver_home.xml" value="0.16742654508611957" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/layout/content_driver_home.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/layout/fragment_home.xml" value="0.17603850050658562" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/layout/layout_register.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/UberClone/app/src/main/res/layout/layout_sign_in.xml" value="0.33" />
       </map>
     </option>
