@@ -16,7 +16,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.firebase.geofire.GeoFire
 import com.firebase.geofire.GeoLocation
-import com.google.android.gms.common.internal.service.Common
 import com.google.android.gms.location.*
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -28,9 +27,8 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.leandro.uberclone.R
-import com.leandro.uberclone.SplashScreenActivity.Common.DRIVERS_LOCATION_REFERENCE
-import com.leandro.uberclone.SplashScreenActivity.Common.DRIVER_INFO_REFERENCE
 import com.leandro.uberclone.databinding.FragmentHomeBinding
+import com.leandro.uberclone.utils.Common.DRIVERS_LOCATION_REFERENCE
 
 class HomeFragment : Fragment(), OnMapReadyCallback {
 

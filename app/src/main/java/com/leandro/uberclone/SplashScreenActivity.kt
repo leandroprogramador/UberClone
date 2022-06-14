@@ -5,6 +5,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
@@ -18,9 +19,15 @@ import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.IdpResponse
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.google.firebase.iid.FirebaseInstanceIdReceiver
+import com.google.firebase.iid.internal.FirebaseInstanceIdInternal
+import com.google.firebase.messaging.FirebaseMessaging
 import com.leandro.uberclone.model.DriverInfoModel
+import com.leandro.uberclone.utils.Common
+import com.leandro.uberclone.utils.UserUtils
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Completable
+import java.lang.StringBuilder
 import java.util.concurrent.TimeUnit
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -67,6 +74,12 @@ class SplashScreenActivity : AppCompatActivity() {
         listener = FirebaseAuth.AuthStateListener { mFirebaseAuth ->
             val user = mFirebaseAuth.currentUser
             user?.let {
+                FirebaseMessaging.getInstance().token
+                    .addOnFailureListener { e->
+                        Toast.makeText(this@SplashScreenActivity, e.message, Toast.LENGTH_SHORT).show()
+                } .addOnSuccessListener { Log.d("TOKEN", it)
+                    UserUtils.updateToken(this@SplashScreenActivity, it)
+                }
                 checkUserFromFirebase()
             } ?: run {
                 showLoginLayout()
@@ -184,10 +197,5 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onStop()
     }
 
-    object Common{
-        var currentUser: DriverInfoModel? = null
-        val DRIVER_INFO_REFERENCE: String = "DriverInfo"
-        val DRIVERS_LOCATION_REFERENCE: String = "DriversLocation"
 
-    }
 }
